@@ -1,0 +1,17 @@
+.results-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.type-container {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.sub-header {
+  font-family: monospace;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}

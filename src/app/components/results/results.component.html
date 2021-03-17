@@ -1,0 +1,14 @@
+<div *ngIf="data" class="results-container">
+  <div class="type-container">
+    <div class="sub-header">Artists</div>
+    <app-result-row *ngFor="let artist of data.artists" [rowData]="artist" dataType="'artist'"></app-result-row>
+  </div>
+  <div class="type-container">
+    <div class="sub-header">Albums</div>
+    <app-result-row *ngFor="let album of data.albums" [rowData]="album" dataType="'album'"></app-result-row>
+  </div>
+  <div class="type-container">
+    <div class="sub-header">Tracks</div>
+    <app-result-row *ngFor="let track of data.tracks" [rowData]="track" dataType="'track'"></app-result-row>
+  </div>
+</div>

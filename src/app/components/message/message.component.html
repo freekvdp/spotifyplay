@@ -1,0 +1,52 @@
+<div class="message-container">
+  <ng-container *ngIf="state === 'idle'">
+    <div class="message">
+      Hello Welcome!
+    </div>
+    <div class="message">
+      To start, click button below to start and say:
+    </div>
+    <div class="message">
+      "Spotify find {{searchValue}}"
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="state === 'listening'">
+    <div class="message">
+      Listening
+    </div>
+    <div class="message">
+      Start your search with:
+    </div>
+    <div class="message">
+      "Spotify find {{searchValue}}"
+    </div>
+    <div class="message">
+      (Try to end with "now" to instant search)
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="state === 'ready'">
+    <div class="message">
+      I heard you say: "{{searchValue}}"
+    </div>
+    <div class="message">
+      If that's correct please hit the button below!
+    </div>
+    <div class="message">
+      (if not click reset)
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="state === 'searching'">
+    <div class="message">
+      searching for: {{searchValue}} ...
+    </div>
+  </ng-container>
+
+  <ng-container *ngIf="state === 'results'">
+    <div class="message">
+      This is what I've found for you:
+    </div>
+  </ng-container>
+</div>

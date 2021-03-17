@@ -1,0 +1,16 @@
+.dots {
+  height: 93vh;
+  background-image: radial-gradient(rgba(123, 123, 123, 0.7) .8px, transparent .8px),radial-gradient(rgba(123, 123, 123, 0.7) .8px, transparent .8px);
+  background-size: calc(20 * .5px) calc(20 * .5px);
+  background-position: 0 0,calc(10 * .5px) calc(10 * .5px);
+  padding: 30px;
+}
+
+.reset-container {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  cursor: pointer;
+  background: white;
+  border-radius: 50%;
+}

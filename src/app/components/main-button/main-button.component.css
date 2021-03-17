@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.button-container {
+  margin-top: 70px;
+  cursor: pointer;
+  background: white;
+  display: flex;
+  border-radius: 50%;
+  transform: scale(5, 5);
+}
+
+.button-container:hover {
+  background-image: repeating-linear-gradient(135deg, rgba(123, 123, 123, 0.7) 0, rgba(123, 123, 123, 0.7) .1px, transparent 0, transparent 10%);
+  background-size: 10px 10px;
+}
